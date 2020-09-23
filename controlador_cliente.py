@@ -8,7 +8,7 @@ log = logs.get_logger('Cliente-Ctrl')
 
 class ControladorCliente:
     def __init__(self):
-        self.cliente = client.Cliente()
+        self.cliente = cliente_socket.Cliente()
     
     def retiro(self,cuenta,valor):
         pet = peticion.Peticion('retiro',{'cuenta':cuenta,'valor':valor})
